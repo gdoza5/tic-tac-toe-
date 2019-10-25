@@ -7,7 +7,7 @@ const playerTwo = "o"
 
 /*----- app's state (variables) -----*/
 
-let playerOneMvs, playerTwoMvs, allMvs
+let playerOneMvs, playerTwoMvs, allMvs, btnArr
 
 
 
@@ -53,4 +53,5 @@ function init() {
     allMvs =[]
     playerOneMvs = []
     playerTwoMvs = []
+    btnArr = []
 };
