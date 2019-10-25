@@ -13,11 +13,13 @@ let playerOneMvs, playerTwoMvs, allMvs, btnArr
 
 
 /*----- cached element references -----*/
+//  btnArr =[document.getElementById('1').textContent,document.getElementById('2').textContent
+// ]
+const tilesTextContent = Array.from(document.querySelectorAll('.tiles')).map(item => item.textContent)
 
-
-
-
-
+// .map(tile => tile.textContent)
+console.log(tilesTextContent)
+tilesTextContent
 
 /*----- event listeners -----*/
 
@@ -53,5 +55,5 @@ function init() {
     allMvs =[]
     playerOneMvs = []
     playerTwoMvs = []
-    btnArr = []
+    btnArr
 };
