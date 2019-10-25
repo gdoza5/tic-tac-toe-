@@ -34,13 +34,23 @@ document.getElementById('board').addEventListener('click', handleBoxClick);
 
 
 /*----- functions -----*/
+init();
 
  
 function handleBoxClick(evt) {
-    evt.target.textContent = playerOne
-    console.log('box was clicked')
-}
+    if( allMvs.length % 2 === 0){
+        evt.target.textContent = playerOne
+        allMvs.push(playerOne)
+        playerOneMvs.push(playerOne)
+    } else if ( allMvs.length % 2 === 1 ) {
+        evt.target.textContent = playerTwo
+        allMvs.push(playerTwo)
+        playerTwoMvs.push(playerTwo)
+    }
+};
 
 function init() {
     allMvs =[]
+    playerOneMvs = []
+    playerTwoMvs = []
 };
