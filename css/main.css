@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+button {
+    height: 100px;
+    width: 100px;
+}
+
+.rstBtn {
+    height: 50px;
+    width: 70px;
+}
