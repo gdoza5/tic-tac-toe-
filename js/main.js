@@ -24,6 +24,9 @@ tilesTextContent
 /*----- event listeners -----*/
 
 document.getElementById('board').addEventListener('click', handleBoxClick);
+//document.querySelector('rstBtn').addEventListener('click', resetGame);
+
+
 
 
 
@@ -40,20 +43,27 @@ init();
 
  
 function handleBoxClick(evt) {
-    if( allMvs.length % 2 === 0){
+    if( allMvs.length % 2 === 0 && allMvs.length < 9){
         evt.target.textContent = playerOne
         allMvs.push(playerOne)
         playerOneMvs.push(playerOne)
-    } else if ( allMvs.length % 2 === 1 ) {
+    } else if ( allMvs.length % 2 === 1 && allMvs.length < 9 ) {
         evt.target.textContent = playerTwo
         allMvs.push(playerTwo)
         playerTwoMvs.push(playerTwo)
     }
+    
 };
+
+// function resetGame(evt){
+//     init();
+// }
+
 
 function init() {
     allMvs =[]
     playerOneMvs = []
     playerTwoMvs = []
     btnArr
+    tilesTextContent
 };
