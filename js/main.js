@@ -24,7 +24,7 @@ tilesTextContent
 /*----- event listeners -----*/
 
 document.getElementById('board').addEventListener('click', handleBoxClick);
-//document.querySelector('rstBtn').addEventListener('click', resetGame);
+document.getElementById('rstBtn').addEventListener('click', rest);
 
 
 
@@ -58,6 +58,12 @@ function handleBoxClick(evt) {
 // function resetGame(evt){
 //     init();
 // }
+
+function rest (){
+    location.reload();
+    return
+}
+
 
 
 function init() {
