@@ -46,11 +46,14 @@ function handleBoxClick(evt) {
     if( allMvs.length % 2 === 0 && allMvs.length < 9){
         evt.target.textContent = playerOne
         allMvs.push(playerOne)
-        playerOneMvs.push(playerOne)
+        playerOneMvs.push(playerOne);
+        console.log(evt)
+        evt.target.disabled = 'false';
     } else if ( allMvs.length % 2 === 1 && allMvs.length < 9 ) {
         evt.target.textContent = playerTwo
         allMvs.push(playerTwo)
         playerTwoMvs.push(playerTwo)
+        evt.target.disabled = 'false';
     }
     
 };
